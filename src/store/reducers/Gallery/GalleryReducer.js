@@ -1,7 +1,7 @@
-import { initialState } from '../initialState';
-import * as actionType from '../actions/actionType';
+import { initialState } from '../../initialState/Gallery/initialState';
+import * as actionType from '../../actions/Gallery/actionType';
 
-export const reducer = (state = initialState, action) => {
+export const GalleryReducer = (state = initialState, action) => {
     switch (action.type) {
         case actionType.FETCH_GRID_SUCCESS:
             return {

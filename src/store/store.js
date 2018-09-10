@@ -1,8 +1,21 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import { reducer } from './reducers/reducers';
+import { GalleryReducer } from './reducers/Gallery/GalleryReducer';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { ImageSlideReducer } from './reducers/ImageSlide/ImageSlideReducer';
+import { startAllSaga } from './sagas/rootSaga';
 
+const combinedReducers = combineReducers(
+    {
+        gallery: GalleryReducer,
+        imagedata: ImageSlideReducer
+    }
+
+)
+const sagaMiddleware = createSagaMiddleware();
 export const store = createStore(
-    reducer,
-    applyMiddleware(createSagaMiddleware())
+    combinedReducers,
+    composeWithDevTools(applyMiddleware(sagaMiddleware))
 );
+
+sagaMiddleware.run(startAllSaga)
