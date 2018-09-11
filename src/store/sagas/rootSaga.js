@@ -4,6 +4,7 @@ import { all } from 'redux-saga/effects';
 
 export function* startAllSaga() {
     try {
+        //start all the saga watchers
         yield all([
             watchGalleryFetch(),
             watchImgageInfo()

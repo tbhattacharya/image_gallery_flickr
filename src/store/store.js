@@ -5,6 +5,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { ImageSlideReducer } from './reducers/ImageSlide/ImageSlideReducer';
 import { startAllSaga } from './sagas/rootSaga';
 
+//Combine all the reducers
 const combinedReducers = combineReducers(
     {
         gallery: GalleryReducer,
@@ -17,5 +18,5 @@ export const store = createStore(
     combinedReducers,
     composeWithDevTools(applyMiddleware(sagaMiddleware))
 );
-
+//Start saga middleware with the saga watchers
 sagaMiddleware.run(startAllSaga)

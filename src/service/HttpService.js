@@ -8,10 +8,11 @@ export const fetchGalleryInformationApi = galleryId => {
     }).then(res => res.data);
 }
 
-export const fetchImageInformationApi = imageId => {
-    return axios.get('http://localhost:8000/fetchImageInfo', {
+export const fetchImageInformationApi = (imageId, secret)  => {
+    return axios.get('http://localhost:8000/fetchPhotoInfo', {
         params: {
-            imageId: imageId
+            photo_id: imageId,
+            secret: secret
         }
     }).then(res => res.data);
 }

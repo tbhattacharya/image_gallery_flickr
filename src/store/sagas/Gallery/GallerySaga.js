@@ -4,8 +4,10 @@ import { fetchGalleryInformationApi } from '../../../service/HttpService';
 
 export function* fetchGalleryInformation({ param }) {
     try {
+        //Fetch the Gallery information from service and extract data from response
         const {data} = yield call(fetchGalleryInformationApi, param);
         if (data) {
+            //The data has two parts hence split the data and store uoder separate tags in Redux
             yield put({ type: actionType.FETCH_GRID_SUCCESS, photoGrid: data.photos.photo });
             yield put({ type: actionType.UPDATE_GALLERY_INFO, galleryInfo: data.gallery });
         }
