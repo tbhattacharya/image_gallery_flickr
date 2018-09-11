@@ -6,7 +6,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 To run the project, clone the project and run by 
     1) npm install
     Followed by
-    2) npm run
+    2) npm start
     
 It is configured to run on host 3000
 
