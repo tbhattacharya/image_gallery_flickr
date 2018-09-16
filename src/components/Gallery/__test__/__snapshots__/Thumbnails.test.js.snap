@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing GalleryHeader Expect Thumbnail to match snapshot 1`] = `
+<div
+  class="MuiGrid-item-08 MuiGrid-grid-xs-3-038 Thumbnails-thumbnail-05"
+>
+  <div
+    class="Thumbnails-overlayItem-04"
+  >
+    Cuando amanece la pasión
+  </div>
+  <div
+    class="Thumbnails-photo-06"
+  >
+    <span
+      class="undefined lazy-load-image-background blur"
+      style="background-image:url( undefined);background-size:100% 100%;color:transparent;display:inline-block;height:100%;width:100%"
+    >
+      <span
+        class=""
+        style="display:inline-block;height:100%;width:100%"
+      >
+        
+      </span>
+    </span>
+  </div>
+</div>
+`;

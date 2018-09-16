@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing GalleryHeader Expect GalleryHeader to match snapshot 1`] = `
+<GalleryHeader
+  classes={
+    Object {
+      "mainConatiner": "GalleryHeader-mainConatiner-02",
+      "overlayItem": "GalleryHeader-overlayItem-04",
+      "photo": "GalleryHeader-photo-06",
+      "root": "GalleryHeader-root-01",
+      "subtitle": "GalleryHeader-subtitle-03",
+      "thumbnail": "GalleryHeader-thumbnail-05",
+    }
+  }
+  galleryInfo={
+    Object {
+      "count_comments": 69,
+      "count_photos": 48,
+      "count_total": 48,
+      "count_videos": 0,
+      "count_views": 38412,
+      "date_create": "1480995213",
+      "date_update": "1514652568",
+      "description": Object {
+        "_content": "For the Top Flickr Photos of 2016, we sorted through billions of uploads to arrive at these 50 favorites. 
+    
+    To compile this list, we started with an algorithm that calculates a combination of social and engagement metrics. To avoid the results being merely a popularity contest, the selection also involved curation by Flickr staff.
+    
+    Where photos from the same community members appeared multiple times in the algorithmic ranking, we’ve selected one of their top-scoring images to represent their work.
+    
+    <a href=\\"http://blog.flickr.net/en/2016/12/06/top-flickr-photos-from-2016/\\" rel=\\"nofollow\\">blog.flickr.net/en/2016/12/06/top-flickr-photos-from-2016/</a>",
+      },
+      "gallery_id": "72157677476597845",
+      "iconfarm": 4,
+      "iconserver": "3741",
+      "id": "66911286-72157677476597845",
+      "owner": "66956608@N06",
+      "owner_name": "Flickr ",
+      "primary_photo_farm": 2,
+      "primary_photo_id": "24173905193",
+      "primary_photo_secret": "89196bf532",
+      "primary_photo_server": "1695",
+      "sort_group": null,
+      "title": Object {
+        "_content": "Top Flickr Photos of 2016",
+      },
+      "url": "https://www.flickr.com/photos/flickr/galleries/72157677476597845",
+      "username": "Flickr",
+    }
+  }
+/>
+`;
